@@ -63,7 +63,7 @@ app.post('/registeration', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
         await user.create({ Username: username, Email: email, Phone: phone, Gender: gender, Password: hashedPassword });
 
-        res.send({message:"Registration Sucessfull"});
+        res.render('success');
     } catch (err) {
         console.log(err.message);
         res.render('register', { error: 'An error occurred. Please try again.' });
