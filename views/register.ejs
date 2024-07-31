@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <p>SIGNUP</p>
-        <form id="registration" action="/registeration" method="post" onsubmit="return validateForm()">
+        <form id="registration" action="/registeration" method="post">
             <input type="text" id="Username" placeholder="USERNAME"  name="username" required>
             <input type="email" id="email" placeholder="EMAIL" name="email" required>
             <input type="text" id="phone" placeholder="PHONE" name="phone" required>
@@ -38,6 +38,5 @@
         </form>
         <form action="/" method="get"><p class="log"><button type="submit">LOGIN</button></p></form>
     </div>
-    <script src="/public/js/registerAuth.js"></script>
 </body>
 </html>
